@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
     <title>Document</title>
 </head>
 <body>
     <div class="grid-container">
         <div class="Header">
             <span class="logo">My Site</span>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-hamburger">☰</label>
             <nav class="header-links">
                 <a href="#"><span>🏠</span> Home</a>
                 <a href="#"><span>📊</span> Analytics</a>
@@ -17,9 +20,13 @@
             </nav>
         </div>
         <div class="Sidebar">
-            <a href="#"><span>📋</span> Dashboard</a>
-            <a href="#"><span>👤</span> Users</a>
-            <a href="#"><span>💰</span> Revenue</a>
+            <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+            <label for="sidebar-toggle" class="sidebar-hamburger">☰</label>
+            <nav class="sidebar-links">
+                <a href="#"><span>📋</span> Dashboard</a>
+                <a href="#"><span>👤</span> Users</a>
+                <a href="#"><span>💰</span> Revenue</a>
+            </nav>
         </div>
         <div class="Content">
             <div class="cards-container">
